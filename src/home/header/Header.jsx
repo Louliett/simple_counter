@@ -5,9 +5,9 @@ export function Header(props) {
 return (
     <div className="header">
         <div className="title-container">
-            <p className="header-title">
+            <h1 className="header-title">
                 {props.headerTitle}
-            </p>
+            </h1>
         </div>
 
         <nav className="navbar">
@@ -15,7 +15,7 @@ return (
                 {(props.navbarItems).map((item, index) => {
                     return (
                     <li key={index}>
-                        {item}
+                        <div className="list-item">{item}</div>
                     </li>
                     )
                 })}
