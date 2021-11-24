@@ -1,4 +1,4 @@
-import { HeaderContainer } from "./header/HeaderContainer";
+import { HeaderContainer } from "../header/HeaderContainer";
 
 export function Home(props) {
 

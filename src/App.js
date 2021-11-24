@@ -1,12 +1,28 @@
 import './App.css';
-import { HomeContainer } from './home/HomeContainer.js';
+import { Route, Routes, Router } from 'react-router-dom';
+import { HomeContainer } from './home/HomeContainer';
+import { CounterClassContainer } from './counter_class/CounterClassContainer';
+import { CounterFunctionalContainer } from './counter_functional/CounterFunctionalContainer';
+import { CounterReduxContainer } from './counter_redux/CounterReduxContainer';
+
 
 function App() {
   return (
-    <div className="App">
-      <HomeContainer />
-    </div>
+    <Routes>
+      <Route path="/" component={HomeContainer}/>
+      <Route path="/counter-class" component={CounterClassContainer}/>
+      <Route path="/counter-functional" component={CounterFunctionalContainer}/>
+      <Route path="/counter-redux" component={CounterReduxContainer}/>
+    </Routes>
   );
 }
 
-export default App;
+const AppWrapper = () => {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+};
+
+export default AppWrapper;

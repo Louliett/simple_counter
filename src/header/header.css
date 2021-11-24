@@ -17,9 +17,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    height: inherit;
 }
 
 .header-title {
+    width: inherit;
     font-family: Roboto, sans-serif;
     color: rgb(0, 0, 0);
 }
@@ -34,17 +36,25 @@
 
 .navbar-list {
     background-color: orange;
+    width: inherit;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 li {
-    background-color:red;
+    width: inherit;
+    background-color: red;
     list-style: none;
     cursor: pointer;
 }
 
 .list-item {
+    width:inherit;
     color: white;
-    padding: 0.5em;
+    padding: 1em;
+    font-size: 20px;
 }
