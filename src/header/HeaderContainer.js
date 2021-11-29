@@ -6,7 +6,7 @@ export function HeaderContainer() {
     const headerTitle = "Simple Counter";
 
     return(
-        <Header 
+        <Header
             navbarItems={navbarItems}
             headerTitle={headerTitle}
         />

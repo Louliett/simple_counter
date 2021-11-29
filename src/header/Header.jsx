@@ -12,13 +12,31 @@ return (
 
         <nav className="navbar">
             <ul className="navbar-list">
-                {(props.navbarItems).map((item, index) => {
+                <li key='0'>
+                    <div className="list-item">
+                        Class
+                    </div>
+                </li>
+                <li key='1'>
+                    <div className="list-item">
+                        Functional
+                    </div>
+                </li>
+                <li key='2'>
+                    <div className="list-item">
+                        <a href={"http://localhost:3000/counter-redux"}>Redux</a>
+                    </div>
+                </li>
+                
+                {/* {(props.navbarItems).map((item, index) => {
                     return (
                     <li key={index}>
-                        <div className="list-item">{item}</div>
+                        <div className="list-item">
+                                <a href="`${}/`">{item}</a>
+                        </div>
                     </li>
                     )
-                })}
+                })} */}
             </ul>
         </nav>
     </div>

@@ -1,6 +1,5 @@
 import './page-not-found.css';
 
-
 export function PageNotFound(props) {
 
     return (

@@ -7,16 +7,16 @@ import { CounterFunctionalContainer } from './counter_functional/CounterFunction
 import { CounterReduxContainer } from './counter_redux/CounterReduxContainer';
 import { FooterContainer } from './footer/FooterContainer';
 
-export function ParentContainer(props) {
+export function Parent(props) {
 
     return(
         <BrowserRouter>
             <HeaderContainer />
                 <Routes>
-                    <Route path="/counter-redux" element={<CounterReduxContainer />}/>
-                    <Route path="/counter-functional" element={<CounterFunctionalContainer />}/>
-                    <Route path="/counter-class" element={<CounterClassContainer />}/>
-                    <Route path="/" element={<HomeContainer />}/>
+                    <Route path="/counter-redux" exact element={ <CounterReduxContainer /> }/>
+                    <Route path="/counter-functional" element={ <CounterFunctionalContainer /> }/>
+                    <Route path="/counter-class" element={ <CounterClassContainer /> }/>
+                    <Route path="/home" element={ <HomeContainer />} />
                 </Routes>
             <FooterContainer />
         </BrowserRouter>
